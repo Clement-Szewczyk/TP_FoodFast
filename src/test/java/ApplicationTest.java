@@ -21,4 +21,13 @@ public class ApplicationTest {
         Assertions.assertEquals("Buzz", foodfast.FoodFastUtils.deliveryPlanner(20));
         Assertions.assertEquals("FizzBuzz", foodfast.FoodFastUtils.deliveryPlanner(30));
     }
+
+    @Test
+    public void testisLeapYear(){
+        Assertions.assertEquals(true, foodfast.FoodFastUtils.isLeapYear(2020));
+        Assertions.assertEquals(false, foodfast.FoodFastUtils.isLeapYear(2021));
+        Assertions.assertEquals(false, foodfast.FoodFastUtils.isLeapYear(2022));
+        Assertions.assertEquals(false, foodfast.FoodFastUtils.isLeapYear(2023));
+        Assertions.assertEquals(true, foodfast.FoodFastUtils.isLeapYear(2024));
+    }
 }
