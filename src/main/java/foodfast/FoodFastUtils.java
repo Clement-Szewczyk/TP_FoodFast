@@ -40,4 +40,7 @@ public class FoodFastUtils {
         return result;
     }
 
+    public static String anonymize(String text){
+        return new StringBuilder(text).reverse().toString();
+    }
 }

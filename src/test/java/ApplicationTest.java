@@ -37,4 +37,11 @@ public class ApplicationTest {
         Assertions.assertEquals(15, foodfast.FoodFastUtils.sumUpTo(5));
         Assertions.assertEquals(21, foodfast.FoodFastUtils.sumUpTo(6));
     }
+
+    @Test
+    public void testAnonymize(){
+        Assertions.assertEquals("nob", foodfast.FoodFastUtils.anonymize("bon"));
+        Assertions.assertEquals("olleh", foodfast.FoodFastUtils.anonymize("hello"));
+        Assertions.assertEquals("tejorp", foodfast.FoodFastUtils.anonymize("projet"));
+    }
 }
