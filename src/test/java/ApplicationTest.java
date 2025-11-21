@@ -30,4 +30,11 @@ public class ApplicationTest {
         Assertions.assertEquals(false, foodfast.FoodFastUtils.isLeapYear(2023));
         Assertions.assertEquals(true, foodfast.FoodFastUtils.isLeapYear(2024));
     }
+
+    @Test
+    public void testsumUpTo(){
+        Assertions.assertEquals(10, foodfast.FoodFastUtils.sumUpTo(4));
+        Assertions.assertEquals(15, foodfast.FoodFastUtils.sumUpTo(5));
+        Assertions.assertEquals(21, foodfast.FoodFastUtils.sumUpTo(6));
+    }
 }
