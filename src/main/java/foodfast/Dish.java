@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Dish{
-    enum DishSize { SMALL, MEDIUM, LARGE }
+    public enum DishSize { SMALL, MEDIUM, LARGE }
 
     private String name;
     private BigDecimal price;
@@ -44,6 +44,9 @@ public class Dish{
                 '}';
     }
     
+    public BigDecimal getPrice() {
+        return price;
+    }
         
 
 }
